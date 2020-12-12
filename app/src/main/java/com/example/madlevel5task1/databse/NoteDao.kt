@@ -7,7 +7,6 @@ import androidx.room.Query
 import androidx.room.Update
 import com.example.madlevel5task1.model.Note
 
-
 @Dao
 interface NoteDao {
 

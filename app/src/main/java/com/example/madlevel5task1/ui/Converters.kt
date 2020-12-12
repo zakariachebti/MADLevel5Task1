@@ -1,4 +1,4 @@
-package com.example.madlevel5task1
+package com.example.madlevel5task1.ui
 
 import androidx.room.TypeConverter
 import java.util.*

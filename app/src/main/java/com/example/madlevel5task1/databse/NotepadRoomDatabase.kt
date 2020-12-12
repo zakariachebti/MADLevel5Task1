@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.example.madlevel5task1.Converters
+import com.example.madlevel5task1.ui.Converters
 import com.example.madlevel5task1.model.Note
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -39,7 +39,7 @@ abstract class NotepadRoomDatabase : RoomDatabase() {
                                     super.onCreate(db)
                                     INSTANCE?.let { database ->
                                         CoroutineScope(Dispatchers.IO).launch {
-                                            database.noteDao().insertNote(Note("Title", Date(), ""))
+                                            database.noteDao().insertNote(Note("Title", Date(), "Text"))
                                         }
                                     }
                                 }
